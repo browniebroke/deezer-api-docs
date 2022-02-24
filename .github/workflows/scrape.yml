@@ -17,6 +17,8 @@ jobs:
       - uses: snok/install-poetry@v1
       - name: Install Dependencies
         run: poetry install
+      - name: Setup Playwright
+        run: poetry run playwright install chrome
       - name: Run Scraper
         run: poetry run scrapy runspider src/spider.py
         env:
