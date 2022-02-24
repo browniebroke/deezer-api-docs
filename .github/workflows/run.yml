@@ -16,3 +16,7 @@ jobs:
         env:
           CYPRESS_DEEZER_PASSWORD: ${{ secrets.DEEZER_PASSWORD }}]
           CYPRESS_GITHUB_PERSONAL_TOKEN: ${{ secrets.GH_PERSONAL_TOKEN }}]
+      # Upload recording
+      - uses: actions/upload-artifact@v2
+        with:
+          path: cypress/videos
