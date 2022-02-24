@@ -42,6 +42,6 @@ context("Authenticate", () => {
     });
 
     // Keep the browser open until the Scrape workflow is finished
-    cy.wait(1000 * 120);
+    cy.wait(30000);
   });
 });
