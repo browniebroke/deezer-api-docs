@@ -37,6 +37,7 @@ jobs:
       - uses: snok/install-poetry@v1
       - name: Install Dependencies
         run: poetry install
+      - run: echo ${{ needs.authenticate.outputs.sid }}
       - name: Run Scraper
         run: poetry run scrapy runspider src/spider.py
         env:
