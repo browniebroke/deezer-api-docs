@@ -2,8 +2,10 @@ name: Scrape
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "13 2 * * *"
+    inputs:
+      deezer_session_id:
+        description: Session ID extracted from Deezer
+        required: true
 
 jobs:
   scrape:
@@ -20,7 +22,7 @@ jobs:
       - name: Run Scraper
         run: poetry run scrapy runspider src/spider.py
         env:
-          DEEZER_SESSION_ID: ${{ secrets.DEEZER_SESSION_ID }}
+          DEEZER_SESSION_ID: ${{ github.event.inputs.deezer_session_id }}
       - name: Get current date
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
