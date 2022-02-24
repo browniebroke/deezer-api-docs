@@ -1,0 +1,32 @@
+name: Scrape
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "13 2 * * *"
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: "3.8"
+      - uses: snok/install-poetry@v1
+      - name: Install Dependencies
+        run: poetry install
+      - name: Run Scraper
+        run: poetry run scrapy runspider src/spider.py
+        env:
+          DEEZER_SESSION_ID: ${{ secrets.DEEZER_SESSION_ID }}
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - name: Commit changes and push
+        uses: github-actions-x/commit@v2.8
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: update as of ${{ steps.date.outputs.date }}"
+          name: actions
