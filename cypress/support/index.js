@@ -14,8 +14,8 @@
 // ***********************************************************
 
 // Don't fail the test in case of uncaught exception on Deezer website
-Cypress.on('uncaught:exception', (err, runnable) => {
+Cypress.on("uncaught:exception", (err, runnable) => {
   // returning false here prevents Cypress from
   // failing the test
-  return false
-})
+  return false;
+});
