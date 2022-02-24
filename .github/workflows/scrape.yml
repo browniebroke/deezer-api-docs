@@ -17,8 +17,6 @@ jobs:
       # Install NPM dependencies, cache them correctly and run Cypress
       - name: Cypress run
         uses: cypress-io/github-action@v2
-        with:
-          build: npm run cy:run
         env:
           CYPRESS_DEEZER_PASSWORD: ${{ secrets.DEEZER_PASSWORD }}
       - id: extract-session-id
