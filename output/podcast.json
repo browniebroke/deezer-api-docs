@@ -1,0 +1,89 @@
+{
+  "tab_infos": [
+    {
+      "Name": "id",
+      "Description": "The podcast's Deezer id",
+      "Type": "int"
+    },
+    {
+      "Name": "title",
+      "Description": "The podcast's title",
+      "Type": "string"
+    },
+    {
+      "Name": "description",
+      "Description": "The podcast's description",
+      "Type": "string"
+    },
+    {
+      "Name": "available",
+      "Description": "If the podcast is available or not",
+      "Type": "boolean"
+    },
+    {
+      "Name": "fans",
+      "Description": "The number of podcast's fans",
+      "Type": "int"
+    },
+    {
+      "Name": "link",
+      "Description": "The url of the podcast on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "share",
+      "Description": "The share link of the podcast on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "picture",
+      "Description": "The url of the podcast's cover.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_small",
+      "Description": "The url of the podcast's cover in size small.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_medium",
+      "Description": "The url of the podcast's cover in size medium.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_big",
+      "Description": "The url of the podcast's cover in size big.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_xl",
+      "Description": "The url of the podcast's cover in size xl.",
+      "Type": "url"
+    }
+  ],
+  "tab_actions": [
+    {
+      "request_method": "POST",
+      "Needed Permissions": "manage_library",
+      "Description": "Add a podcast to the user's favorites",
+      "Required params": "podcast_id",
+      "Required params.1": "The id of the podcast",
+      "Required params.2": "int"
+    },
+    {
+      "request_method": "DELETE",
+      "Needed Permissions": "manage_librarydelete_library",
+      "Description": "Remove a podcast from the user's favorites",
+      "Required params": "podcast_id",
+      "Required params.1": "The id of the podcast",
+      "Required params.2": "int"
+    }
+  ],
+  "tab_connections": [
+    {
+      "Name": "podcast / episodes",
+      "Description": "Returns the list of episodes about the podcast",
+      "Returns": "A list of object of type episode"
+    }
+  ]
+}

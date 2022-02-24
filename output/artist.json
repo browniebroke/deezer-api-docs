@@ -1,0 +1,119 @@
+{
+  "tab_infos": [
+    {
+      "Name": "id",
+      "Description": "The artist's Deezer id",
+      "Type": "int"
+    },
+    {
+      "Name": "name",
+      "Description": "The artist's name",
+      "Type": "string"
+    },
+    {
+      "Name": "link",
+      "Description": "The url of the artist on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "share",
+      "Description": "The share link of the artist on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "picture",
+      "Description": "The url of the artist picture. Add 'size' parameter to the url to change size. Can be 'small', 'medium', 'big', 'xl'",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_small",
+      "Description": "The url of the artist picture in size small.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_medium",
+      "Description": "The url of the artist picture in size medium.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_big",
+      "Description": "The url of the artist picture in size big.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_xl",
+      "Description": "The url of the artist picture in size xl.",
+      "Type": "url"
+    },
+    {
+      "Name": "nb_album",
+      "Description": "The number of artist's albums",
+      "Type": "int"
+    },
+    {
+      "Name": "nb_fan",
+      "Description": "The number of artist's fans",
+      "Type": "int"
+    },
+    {
+      "Name": "radio",
+      "Description": "true if the artist has a smartradio",
+      "Type": "boolean"
+    },
+    {
+      "Name": "tracklist",
+      "Description": "API Link to the top of this artist",
+      "Type": "url"
+    }
+  ],
+  "tab_actions": [
+    {
+      "request_method": "POST",
+      "Needed Permissions": "manage_library",
+      "Description": "Add artist(s) to the user's favorites",
+      "Required params": "",
+      "Required params.1": "",
+      "Required params.2": ""
+    },
+    {
+      "request_method": "DELETE",
+      "Needed Permissions": "manage_librarydelete_library",
+      "Description": "Remove an artist from the user's favorites",
+      "Required params": "artist_id",
+      "Required params.1": "The id of the artist",
+      "Required params.2": "int"
+    }
+  ],
+  "tab_connections": [
+    {
+      "Name": "artist / top",
+      "Description": "Get the top 5 tracks of an artist",
+      "Returns": "A list of object of type track"
+    },
+    {
+      "Name": "artist / albums",
+      "Description": "Return a list of artist's albums. Represented by an array of Album objects",
+      "Returns": "A list of object of type album"
+    },
+    {
+      "Name": "artist / fans",
+      "Description": "Return a list of artist's fans. Represented by an array of User objects",
+      "Returns": "A list of object of type user"
+    },
+    {
+      "Name": "artist / related",
+      "Description": "Return a list of related artists. Represented by an array of Artist objects",
+      "Returns": "A list of object of type artist"
+    },
+    {
+      "Name": "artist / radio",
+      "Description": "Return a list of tracks. Represented by an array of Track object",
+      "Returns": "A list of object of type track"
+    },
+    {
+      "Name": "artist / playlists",
+      "Description": "Return a list of artist's playlists. Represented by an array of Playlist object",
+      "Returns": "A list of object of type playlist"
+    }
+  ]
+}

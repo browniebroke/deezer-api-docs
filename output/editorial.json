@@ -1,0 +1,57 @@
+{
+  "tab_infos": [
+    {
+      "Name": "id",
+      "Description": "The editorial's Deezer id",
+      "Type": "int"
+    },
+    {
+      "Name": "name",
+      "Description": "The editorial's name",
+      "Type": "string"
+    },
+    {
+      "Name": "picture",
+      "Description": "The url of the editorial picture.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_small",
+      "Description": "The url of the editorial picture in size small.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_medium",
+      "Description": "The url of the editorial picture in size medium.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_big",
+      "Description": "The url of the editorial picture in size big.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_xl",
+      "Description": "The url of the editorial picture in size xl.",
+      "Type": "url"
+    }
+  ],
+  "tab_actions": "",
+  "tab_connections": [
+    {
+      "Name": "editorial / selection",
+      "Description": "Return a list of albums selected every week by the Deezer Team.",
+      "Returns": "A list of object of type album"
+    },
+    {
+      "Name": "editorial / charts",
+      "Description": "This method returns four lists : Top track, Top album, Top artist and Top playlist.",
+      "Returns": "A list of object of type trackA list of object of type albumA list of object of type artistA list of object of type playlist"
+    },
+    {
+      "Name": "editorial / releases",
+      "Description": "This method returns the new releases per genre for the current country",
+      "Returns": "A list of object of type album"
+    }
+  ]
+}

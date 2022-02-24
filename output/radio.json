@@ -1,0 +1,99 @@
+{
+  "tab_infos": [
+    {
+      "Name": "id",
+      "Description": "The radio deezer ID",
+      "Type": "int"
+    },
+    {
+      "Name": "title",
+      "Description": "The radio title",
+      "Type": "string"
+    },
+    {
+      "Name": "description",
+      "Description": "The radio title",
+      "Type": "string"
+    },
+    {
+      "Name": "share",
+      "Description": "The share link of the radio on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "picture",
+      "Description": "The url of the radio picture. Add 'size' parameter to the url to change size. Can be 'small', 'medium', 'big', 'xl'",
+      "Type": ""
+    },
+    {
+      "Name": "picture_small",
+      "Description": "The url of the radio picture in size small.",
+      "Type": ""
+    },
+    {
+      "Name": "picture_medium",
+      "Description": "The url of the radio picture in size medium.",
+      "Type": ""
+    },
+    {
+      "Name": "picture_big",
+      "Description": "The url of the radio picture in size big.",
+      "Type": ""
+    },
+    {
+      "Name": "picture_xl",
+      "Description": "The url of the radio picture in size xl.",
+      "Type": ""
+    },
+    {
+      "Name": "tracklist",
+      "Description": "API Link to the tracklist of this radio",
+      "Type": "url"
+    },
+    {
+      "Name": "md5_image",
+      "Description": "",
+      "Type": "string"
+    }
+  ],
+  "tab_actions": [
+    {
+      "request_method": "POST",
+      "Needed Permissions": "manage_library",
+      "Description": "Add a radio to the user's favorites",
+      "Required params": "radio_id",
+      "Required params.1": "The id of the radio",
+      "Required params.2": "int"
+    },
+    {
+      "request_method": "DELETE",
+      "Needed Permissions": "manage_librarydelete_library",
+      "Description": "Remove a radio from the user's favorites",
+      "Required params": "radio_id",
+      "Required params.1": "The id of the radio",
+      "Required params.2": "int"
+    }
+  ],
+  "tab_connections": [
+    {
+      "Name": "radio / genres",
+      "Description": "Returns a list of radio splitted by genre",
+      "Returns": "A list of object of type radio"
+    },
+    {
+      "Name": "radio / top",
+      "Description": "Return the top radios (default to 25 radios)",
+      "Returns": "A list of object of type radio"
+    },
+    {
+      "Name": "radio / tracks",
+      "Description": "Get first 40 tracks in the radio",
+      "Returns": "A list of object of type track"
+    },
+    {
+      "Name": "radio / lists",
+      "Description": "Returns a list of personal radio splitted by genre (as MIX in website)",
+      "Returns": "A list of object of type radio"
+    }
+  ]
+}

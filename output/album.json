@@ -1,0 +1,229 @@
+{
+  "tab_infos": [
+    {
+      "Name": "id",
+      "Description": "The Deezer album id",
+      "Type": "int"
+    },
+    {
+      "Name": "title",
+      "Description": "The album title",
+      "Type": "string"
+    },
+    {
+      "Name": "upc",
+      "Description": "The album UPC",
+      "Type": "string"
+    },
+    {
+      "Name": "link",
+      "Description": "The url of the album on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "share",
+      "Description": "The share link of the album on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "cover",
+      "Description": "The url of the album's cover. Add 'size' parameter to the url to change size. Can be 'small', 'medium', 'big', 'xl'",
+      "Type": "url"
+    },
+    {
+      "Name": "cover_small",
+      "Description": "The url of the album's cover in size small.",
+      "Type": "url"
+    },
+    {
+      "Name": "cover_medium",
+      "Description": "The url of the album's cover in size medium.",
+      "Type": "url"
+    },
+    {
+      "Name": "cover_big",
+      "Description": "The url of the album's cover in size big.",
+      "Type": "url"
+    },
+    {
+      "Name": "cover_xl",
+      "Description": "The url of the album's cover in size xl.",
+      "Type": "url"
+    },
+    {
+      "Name": "md5_image",
+      "Description": "",
+      "Type": "string"
+    },
+    {
+      "Name": "genre_id",
+      "Description": "The album's first genre id (You should use the genre list instead). NB : -1 for not found",
+      "Type": "int"
+    },
+    {
+      "Name": "genres",
+      "Description": "List of genre object",
+      "Type": "list"
+    },
+    {
+      "Name": "label",
+      "Description": "The album's label name",
+      "Type": "string"
+    },
+    {
+      "Name": "nb_tracks",
+      "Description": "",
+      "Type": "int"
+    },
+    {
+      "Name": "duration",
+      "Description": "The album's duration (seconds)",
+      "Type": "int"
+    },
+    {
+      "Name": "fans",
+      "Description": "The number of album's Fans",
+      "Type": "int"
+    },
+    {
+      "Name": "release_date",
+      "Description": "The album's release date",
+      "Type": "date"
+    },
+    {
+      "Name": "record_type",
+      "Description": "The record type of the album (EP / ALBUM / etc..)",
+      "Type": "string"
+    },
+    {
+      "Name": "available",
+      "Description": "",
+      "Type": "boolean"
+    },
+    {
+      "Name": "alternative",
+      "Description": "Return an alternative album object if the current album is not available",
+      "Type": "object"
+    },
+    {
+      "Name": "tracklist",
+      "Description": "API Link to the tracklist of this album",
+      "Type": "url"
+    },
+    {
+      "Name": "explicit_lyrics",
+      "Description": "Whether the album contains explicit lyrics",
+      "Type": "boolean"
+    },
+    {
+      "Name": "explicit_content_lyrics",
+      "Description": "The explicit content lyrics values (0:Not Explicit; 1:Explicit; 2:Unknown; 3:Edited; 4:Partially Explicit (Album \"lyrics\" only); 5:Partially Unknown (Album \"lyrics\" only); 6:No Advice Available; 7:Partially No Advice Available (Album \"lyrics\" only))",
+      "Type": "int"
+    },
+    {
+      "Name": "explicit_content_cover",
+      "Description": "The explicit cover values (0:Not Explicit; 1:Explicit; 2:Unknown; 3:Edited; 4:Partially Explicit (Album \"lyrics\" only); 5:Partially Unknown (Album \"lyrics\" only); 6:No Advice Available; 7:Partially No Advice Available (Album \"lyrics\" only))",
+      "Type": "int"
+    },
+    {
+      "Name": "contributors",
+      "Description": "Return a list of contributors on the album",
+      "Type": "list"
+    },
+    {
+      "Name": "artist",
+      "Description": "artist object containing : id, name, picture, picture_small, picture_medium, picture_big, picture_xl",
+      "Type": "object"
+    },
+    {
+      "Name": "tracks",
+      "Description": "list of track",
+      "Type": "list"
+    },
+    {
+      "Name": "id",
+      "Description": "The track's Deezer id",
+      "Type": "int"
+    },
+    {
+      "Name": "readable",
+      "Description": "true if the track is readable in the player for the current user",
+      "Type": "boolean"
+    },
+    {
+      "Name": "title",
+      "Description": "The track's fulltitle",
+      "Type": "string"
+    },
+    {
+      "Name": "title_short",
+      "Description": "The track's short title",
+      "Type": "string"
+    },
+    {
+      "Name": "title_version",
+      "Description": "The track version",
+      "Type": "string"
+    },
+    {
+      "Name": "link",
+      "Description": "The url of the track on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "duration",
+      "Description": "The track's duration in seconds",
+      "Type": "int"
+    },
+    {
+      "Name": "rank",
+      "Description": "The track's Deezer rank",
+      "Type": "int"
+    },
+    {
+      "Name": "explicit_lyrics",
+      "Description": "Whether the track contains explicit lyrics",
+      "Type": "boolean"
+    },
+    {
+      "Name": "preview",
+      "Description": "The url of track's preview file. This file contains the first 30 seconds of the track",
+      "Type": "url"
+    },
+    {
+      "Name": "artist",
+      "Description": "artist object containing : id, name",
+      "Type": "object"
+    }
+  ],
+  "tab_actions": [
+    {
+      "request_method": "POST",
+      "Needed Permissions": "manage_library",
+      "Description": "Add album(s) to the user's library",
+      "Required params": "",
+      "Required params.1": "",
+      "Required params.2": ""
+    },
+    {
+      "request_method": "DELETE",
+      "Needed Permissions": "manage_librarydelete_library",
+      "Description": "Remove an album from the user's library",
+      "Required params": "album_id",
+      "Required params.1": "The id of the album",
+      "Required params.2": "int"
+    }
+  ],
+  "tab_connections": [
+    {
+      "Name": "album / fans",
+      "Description": "Return a list of album's fans. Represented by an array of User objects",
+      "Returns": "A list of object of type user"
+    },
+    {
+      "Name": "album / tracks",
+      "Description": "Return a list of album's tracks. Represented by an array of Track objects",
+      "Returns": "A list of object of type track"
+    }
+  ]
+}

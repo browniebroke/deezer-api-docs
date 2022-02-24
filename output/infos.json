@@ -1,0 +1,26 @@
+{
+  "tab_infos": [
+    {
+      "Name": "country_iso",
+      "Description": "The current country ISO code",
+      "Type": "string"
+    },
+    {
+      "Name": "country",
+      "Description": "The current country name",
+      "Type": "string"
+    },
+    {
+      "Name": "open",
+      "Description": "Indicates if Deezer is open in the current country or not",
+      "Type": "boolean"
+    },
+    {
+      "Name": "offers",
+      "Description": "An array of available offers in the current country",
+      "Type": "array"
+    }
+  ],
+  "tab_actions": "",
+  "tab_connections": ""
+}

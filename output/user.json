@@ -1,0 +1,192 @@
+{
+  "tab_infos": [
+    {
+      "Name": "id",
+      "Description": "The user's Deezer ID",
+      "Type": "int"
+    },
+    {
+      "Name": "name",
+      "Description": "The user's Deezer nickname",
+      "Type": "string"
+    },
+    {
+      "Name": "lastname",
+      "Description": "The user's last name",
+      "Type": "string"
+    },
+    {
+      "Name": "firstname",
+      "Description": "The user's first name",
+      "Type": "string"
+    },
+    {
+      "Name": "email",
+      "Description": "The user's email",
+      "Type": "string"
+    },
+    {
+      "Name": "status",
+      "Description": "The user's status",
+      "Type": "int"
+    },
+    {
+      "Name": "birthday",
+      "Description": "The user's birthday",
+      "Type": "date"
+    },
+    {
+      "Name": "inscription_date",
+      "Description": "The user's inscription date",
+      "Type": "date"
+    },
+    {
+      "Name": "gender",
+      "Description": "The user's gender : F or M",
+      "Type": "string"
+    },
+    {
+      "Name": "link",
+      "Description": "The url of the profil for the user on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "picture",
+      "Description": "The url of the user's profil picture. Add 'size' parameter to the url to change size. Can be 'small', 'medium', 'big', 'xl'",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_small",
+      "Description": "The url of the user's profil picture in size small.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_medium",
+      "Description": "The url of the user's profil picture in size medium.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_big",
+      "Description": "The url of the user's profil picture in size big.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_xl",
+      "Description": "The url of the user's profil picture in size xl.",
+      "Type": "url"
+    },
+    {
+      "Name": "country",
+      "Description": "The user's country",
+      "Type": "string"
+    },
+    {
+      "Name": "lang",
+      "Description": "The user's language",
+      "Type": "string"
+    },
+    {
+      "Name": "is_kid",
+      "Description": "If the user is a kid or not",
+      "Type": "boolean"
+    },
+    {
+      "Name": "explicit_content_level",
+      "Description": "The user's explicit content level according to his country",
+      "Type": "string"
+    },
+    {
+      "Name": "explicit_content_levels_available",
+      "Description": "The user's available explicit content levels according to his country. Possible values are: explicit_display, explicit_no_recommendation and explicit_hide",
+      "Type": "array"
+    },
+    {
+      "Name": "tracklist",
+      "Description": "API Link to the flow of this user",
+      "Type": "url"
+    }
+  ],
+  "tab_actions": "",
+  "tab_connections": [
+    {
+      "Name": "user / albums",
+      "Description": "Return a list of user's favorite albums. Represented by an array of Album object",
+      "Returns": "A list of object of type album"
+    },
+    {
+      "Name": "user / artists",
+      "Description": "Return a list of user's favorite artists. Represented by an array of Artist object",
+      "Returns": "A list of object of type artist"
+    },
+    {
+      "Name": "user / charts",
+      "Description": "Use charts/albums, charts/playlists or charts/tracks.",
+      "Returns": ""
+    },
+    {
+      "Name": "user / flow",
+      "Description": "Returns a list of user's flow tracks, represented by an array of Track object.",
+      "Returns": "A list of object of type track"
+    },
+    {
+      "Name": "user / followings",
+      "Description": "Return a list of user's Friends, represented by an array of User object",
+      "Returns": "A list of object of type user"
+    },
+    {
+      "Name": "user / followers",
+      "Description": "Return a list of user's Friends, represented by an array of User object",
+      "Returns": "A list of object of type user"
+    },
+    {
+      "Name": "user / history",
+      "Description": "Returns a list of the recently played tracks",
+      "Returns": "A list of object of type track"
+    },
+    {
+      "Name": "user / notifications",
+      "Description": "Use this method in post only, to add notifications in user feed",
+      "Returns": ""
+    },
+    {
+      "Name": "user / permissions",
+      "Description": "Return the user's Permissions granted to the application",
+      "Returns": "An object of type variable"
+    },
+    {
+      "Name": "user / options",
+      "Description": "Alias of /options",
+      "Returns": "An object of type options"
+    },
+    {
+      "Name": "user / personal_songs",
+      "Description": "Return a list of user's personnal song, represented by an array of Tracks",
+      "Returns": "A list of object of type track"
+    },
+    {
+      "Name": "user / playlists",
+      "Description": "Return a list of user's public Playlist, represented by an array of Playlist object.Permission is needed to return private playlists",
+      "Returns": "A list of object of type playlist"
+    },
+    {
+      "Name": "user / podcasts",
+      "Description": "Return a list of user's favorite podcasts. Represented by an array of Podcast object",
+      "Returns": "A list of object of type podcast"
+    },
+    {
+      "Name": "user / radios",
+      "Description": "Return a list of user's favorite Radios, represented by an array of Radio object.",
+      "Returns": "A list of object of type radio"
+    },
+    {
+      "Name": "user / recommendations",
+      "Description": "Use recommendations/albums, recommendations/artists, recommendations/playlists, recommendations/tracks, recommendations/radios or recommendations/releases.",
+      "Returns": ""
+    },
+    {
+      "Name": "user / tracks",
+      "Description": "Return a list of user's favorite tracks. Represented by an array of Track object",
+      "Returns": "A list of object of type track"
+    }
+  ]
+}

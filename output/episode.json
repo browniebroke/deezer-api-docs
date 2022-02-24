@@ -1,0 +1,82 @@
+{
+  "tab_infos": [
+    {
+      "Name": "id",
+      "Description": "The episode's Deezer id",
+      "Type": "int"
+    },
+    {
+      "Name": "title",
+      "Description": "The episode's title",
+      "Type": "string"
+    },
+    {
+      "Name": "description",
+      "Description": "The episode's description",
+      "Type": "string"
+    },
+    {
+      "Name": "available",
+      "Description": "If the episode is available or not",
+      "Type": "boolean"
+    },
+    {
+      "Name": "release_date",
+      "Description": "The episode's release date",
+      "Type": "date"
+    },
+    {
+      "Name": "duration",
+      "Description": "The episode's duration (seconds)",
+      "Type": "int"
+    },
+    {
+      "Name": "link",
+      "Description": "The url of the episode on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "share",
+      "Description": "The share link of the episode on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "picture",
+      "Description": "The url of the episode's cover.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_small",
+      "Description": "The url of the episode's cover in size small.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_medium",
+      "Description": "The url of the episode's cover in size medium.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_big",
+      "Description": "The url of the episode's cover in size big.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_xl",
+      "Description": "The url of the episode's cover in size xl.",
+      "Type": "url"
+    },
+    {
+      "Name": "podcast",
+      "Description": "podcast object containing : id, title, link, picture, picture_small, picture_medium, picture_big, picture_xl",
+      "Type": "object"
+    }
+  ],
+  "tab_actions": "",
+  "tab_connections": [
+    {
+      "Name": "episode / bookmark",
+      "Description": "Handles a bookmark on the episode",
+      "Returns": ""
+    }
+  ]
+}

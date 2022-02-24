@@ -1,0 +1,214 @@
+{
+  "tab_infos": [
+    {
+      "Name": "id",
+      "Description": "The playlist's Deezer id",
+      "Type": "int"
+    },
+    {
+      "Name": "title",
+      "Description": "The playlist's title",
+      "Type": "string"
+    },
+    {
+      "Name": "description",
+      "Description": "The playlist description",
+      "Type": "string"
+    },
+    {
+      "Name": "duration",
+      "Description": "The playlist's duration (seconds)",
+      "Type": "int"
+    },
+    {
+      "Name": "public",
+      "Description": "If the playlist is public or not",
+      "Type": "boolean"
+    },
+    {
+      "Name": "is_loved_track",
+      "Description": "If the playlist is the love tracks playlist",
+      "Type": "boolean"
+    },
+    {
+      "Name": "collaborative",
+      "Description": "If the playlist is collaborative or not",
+      "Type": "boolean"
+    },
+    {
+      "Name": "nb_tracks",
+      "Description": "Nb tracks in the playlist",
+      "Type": "int"
+    },
+    {
+      "Name": "unseen_track_count",
+      "Description": "Nb tracks not seen",
+      "Type": "int"
+    },
+    {
+      "Name": "fans",
+      "Description": "The number of playlist's fans",
+      "Type": "int"
+    },
+    {
+      "Name": "link",
+      "Description": "The url of the playlist on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "share",
+      "Description": "The share link of the playlist on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "picture",
+      "Description": "The url of the playlist's cover. Add 'size' parameter to the url to change size. Can be 'small', 'medium', 'big', 'xl'",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_small",
+      "Description": "The url of the playlist's cover in size small.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_medium",
+      "Description": "The url of the playlist's cover in size medium.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_big",
+      "Description": "The url of the playlist's cover in size big.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_xl",
+      "Description": "The url of the playlist's cover in size xl.",
+      "Type": "url"
+    },
+    {
+      "Name": "checksum",
+      "Description": "The checksum for the track list",
+      "Type": "string"
+    },
+    {
+      "Name": "creator",
+      "Description": "user object containing : id, name",
+      "Type": "object"
+    },
+    {
+      "Name": "tracks",
+      "Description": "list of track",
+      "Type": "list"
+    },
+    {
+      "Name": "id",
+      "Description": "The track's Deezer id",
+      "Type": "int"
+    },
+    {
+      "Name": "readable",
+      "Description": "true if the track is readable in the player for the current user",
+      "Type": "boolean"
+    },
+    {
+      "Name": "title",
+      "Description": "The track's fulltitle",
+      "Type": "string"
+    },
+    {
+      "Name": "title_short",
+      "Description": "The track's short title",
+      "Type": "string"
+    },
+    {
+      "Name": "title_version",
+      "Description": "The track version",
+      "Type": "string"
+    },
+    {
+      "Name": "unseen",
+      "Description": "The track unseen status",
+      "Type": "boolean"
+    },
+    {
+      "Name": "link",
+      "Description": "The url of the track on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "duration",
+      "Description": "The track's duration in seconds",
+      "Type": "int"
+    },
+    {
+      "Name": "rank",
+      "Description": "The track's Deezer rank",
+      "Type": "int"
+    },
+    {
+      "Name": "explicit_lyrics",
+      "Description": "Whether the track contains explicit lyrics",
+      "Type": "boolean"
+    },
+    {
+      "Name": "preview",
+      "Description": "The url of track's preview file. This file contains the first 30 seconds of the track",
+      "Type": "url"
+    },
+    {
+      "Name": "time_add",
+      "Description": "The time when the track has been added to the playlist",
+      "Type": "timestamp"
+    },
+    {
+      "Name": "artist",
+      "Description": "artist object containing : id, name, link",
+      "Type": "object"
+    },
+    {
+      "Name": "album",
+      "Description": "album object containing : id, title, cover, cover_small, cover_medium, cover_big, cover_xl",
+      "Type": "object"
+    }
+  ],
+  "tab_actions": [
+    {
+      "request_method": "POST",
+      "Needed Permissions": "manage_library",
+      "Description": "Update the playlist",
+      "Required params": "",
+      "Required params.1": "",
+      "Required params.2": ""
+    },
+    {
+      "request_method": "DELETE",
+      "Needed Permissions": "delete_library",
+      "Description": "Delete the playlist",
+      "Required params": "",
+      "Required params.1": "",
+      "Required params.2": ""
+    }
+  ],
+  "tab_connections": [
+    {
+      "Name": "playlist / seen",
+      "Description": "GET method is not available. Please check POST methods.",
+      "Returns": ""
+    },
+    {
+      "Name": "playlist / fans",
+      "Description": "Return a list of playlist's fans. Represented by an array of User objects",
+      "Returns": "A list of object of type user"
+    },
+    {
+      "Name": "playlist / tracks",
+      "Description": "Return a list of playlist's tracks. Represented by an array of Track object",
+      "Returns": "A list of object of type track"
+    },
+    {
+      "Name": "playlist / radio",
+      "Description": "Return a list of playlist's recommendation tracks. Represented by an array of Track object",
+      "Returns": "A list of object of type track"
+    }
+  ]
+}

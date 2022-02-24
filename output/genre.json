@@ -1,0 +1,57 @@
+{
+  "tab_infos": [
+    {
+      "Name": "id",
+      "Description": "The editorial's Deezer id",
+      "Type": "int"
+    },
+    {
+      "Name": "name",
+      "Description": "The editorial's name",
+      "Type": "string"
+    },
+    {
+      "Name": "picture",
+      "Description": "The url of the genre picture. Add 'size' parameter to the url to change size. Can be 'small', 'medium', 'big', 'xl'",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_small",
+      "Description": "The url of the genre picture in size small.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_medium",
+      "Description": "The url of the genre picture in size medium.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_big",
+      "Description": "The url of the genre picture in size big.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_xl",
+      "Description": "The url of the genre picture in size xl.",
+      "Type": "url"
+    }
+  ],
+  "tab_actions": "",
+  "tab_connections": [
+    {
+      "Name": "genre / artists",
+      "Description": "Returns all artists for a genre",
+      "Returns": "An object of type artist"
+    },
+    {
+      "Name": "genre / podcasts",
+      "Description": "Returns all podcasts for a genre",
+      "Returns": "A list of object of type podcast"
+    },
+    {
+      "Name": "genre / radios",
+      "Description": "Returns all radios for a genre",
+      "Returns": "An object of type radio"
+    }
+  ]
+}

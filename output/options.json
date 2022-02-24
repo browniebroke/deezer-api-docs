@@ -1,0 +1,66 @@
+{
+  "tab_infos": [
+    {
+      "Name": "streaming",
+      "Description": "If the user can stream on the platform",
+      "Type": "boolean"
+    },
+    {
+      "Name": "streaming_duration",
+      "Description": "the streaming duration of the user",
+      "Type": "int"
+    },
+    {
+      "Name": "offline",
+      "Description": "The user can listen to the music in offline mode",
+      "Type": "boolean"
+    },
+    {
+      "Name": "hq",
+      "Description": "The HQ can be activated",
+      "Type": "boolean"
+    },
+    {
+      "Name": "ads_display",
+      "Description": "Displays ads",
+      "Type": "boolean"
+    },
+    {
+      "Name": "ads_audio",
+      "Description": "Activates audio ads",
+      "Type": "boolean"
+    },
+    {
+      "Name": "too_many_devices",
+      "Description": "If the user reached the limit of linked devices",
+      "Type": "boolean"
+    },
+    {
+      "Name": "can_subscribe",
+      "Description": "If the user can subscribe to the service",
+      "Type": "boolean"
+    },
+    {
+      "Name": "radio_skips",
+      "Description": "The limit of radio skips. 0 = no limit",
+      "Type": "int"
+    },
+    {
+      "Name": "lossless",
+      "Description": "Lossless is available",
+      "Type": "boolean"
+    },
+    {
+      "Name": "preview",
+      "Description": "Allows to display the preview of the tracks",
+      "Type": "boolean"
+    },
+    {
+      "Name": "radio",
+      "Description": "Allows to stream the radio",
+      "Type": "boolean"
+    }
+  ],
+  "tab_actions": "",
+  "tab_connections": ""
+}

@@ -1,0 +1,55 @@
+{
+  "tab_infos": [
+    {
+      "Name": "strict",
+      "Description": "Disable the fuzzy mode (?strict=on)"
+    },
+    {
+      "Name": "order",
+      "Description": "Possible values : RANKING, TRACK_ASC, TRACK_DESC, ARTIST_ASC, ARTIST_DESC, ALBUM_ASC, ALBUM_DESC, RATING_ASC, RATING_DESC, DURATION_ASC, DURATION_DESC"
+    }
+  ],
+  "tab_actions": "",
+  "tab_connections": [
+    {
+      "Name": "search / album",
+      "Description": "Search albums",
+      "Returns": "A list of object of type album"
+    },
+    {
+      "Name": "search / artist",
+      "Description": "Search artists",
+      "Returns": "A list of object of type artist"
+    },
+    {
+      "Name": "search / history",
+      "Description": "Get user search history",
+      "Returns": "A list of object of type trackA list of object of type albumA list of object of type artistA list of object of type playlistA list of object of type podcastA list of object of type radio"
+    },
+    {
+      "Name": "search / playlist",
+      "Description": "Search playlists",
+      "Returns": "A list of object of type playlist"
+    },
+    {
+      "Name": "search / podcast",
+      "Description": "Search podcasts",
+      "Returns": "A list of object of type podcast"
+    },
+    {
+      "Name": "search / radio",
+      "Description": "Search radio",
+      "Returns": "A list of object of type radio"
+    },
+    {
+      "Name": "search / track",
+      "Description": "Search tracks",
+      "Returns": "A list of object of type track"
+    },
+    {
+      "Name": "search / user",
+      "Description": "Search users",
+      "Returns": "A list of object of type user"
+    }
+  ]
+}

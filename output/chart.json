@@ -1,0 +1,347 @@
+{
+  "tab_infos": [
+    {
+      "Name": "tracks",
+      "Description": "list of track",
+      "Type": "list"
+    },
+    {
+      "Name": "id",
+      "Description": "The track's Deezer id",
+      "Type": "int"
+    },
+    {
+      "Name": "title",
+      "Description": "The track's fulltitle",
+      "Type": "string"
+    },
+    {
+      "Name": "title_short",
+      "Description": "The track's short title",
+      "Type": "string"
+    },
+    {
+      "Name": "title_version",
+      "Description": "The track version",
+      "Type": "string"
+    },
+    {
+      "Name": "link",
+      "Description": "The url of the track on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "duration",
+      "Description": "The track's duration in seconds",
+      "Type": "int"
+    },
+    {
+      "Name": "rank",
+      "Description": "The track's Deezer rank",
+      "Type": "int"
+    },
+    {
+      "Name": "explicit_lyrics",
+      "Description": "Whether the track contains explicit lyrics",
+      "Type": "boolean"
+    },
+    {
+      "Name": "preview",
+      "Description": "The url of track's preview file. This file contains the first 30 seconds of the track",
+      "Type": "url"
+    },
+    {
+      "Name": "position",
+      "Description": "The position of the track in the charts",
+      "Type": "int"
+    },
+    {
+      "Name": "artist",
+      "Description": "artist object containing : id, name, link, picture, picture_small, picture_medium, picture_big, picture_xl, radio",
+      "Type": "object"
+    },
+    {
+      "Name": "album",
+      "Description": "album object containing : id, title, cover, cover_small, cover_medium, cover_big, cover_xl",
+      "Type": "object"
+    },
+    {
+      "Name": "albums",
+      "Description": "list of album",
+      "Type": "list"
+    },
+    {
+      "Name": "id",
+      "Description": "The Deezer album id",
+      "Type": "int"
+    },
+    {
+      "Name": "title",
+      "Description": "The album title",
+      "Type": "string"
+    },
+    {
+      "Name": "link",
+      "Description": "The url of the album on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "cover",
+      "Description": "The url of the album's cover. Add 'size' parameter to the url to change size. Can be 'small', 'medium', 'big', 'xl'",
+      "Type": "url"
+    },
+    {
+      "Name": "cover_small",
+      "Description": "The url of the album's cover in size small.",
+      "Type": "url"
+    },
+    {
+      "Name": "cover_medium",
+      "Description": "The url of the album's cover in size medium.",
+      "Type": "url"
+    },
+    {
+      "Name": "cover_big",
+      "Description": "The url of the album's cover in size big.",
+      "Type": "url"
+    },
+    {
+      "Name": "cover_xl",
+      "Description": "The url of the album's cover in size xl.",
+      "Type": "url"
+    },
+    {
+      "Name": "record_type",
+      "Description": "The record type of the album (EP / ALBUM / etc..)",
+      "Type": "string"
+    },
+    {
+      "Name": "explicit_lyrics",
+      "Description": "Whether the album contains explicit lyrics",
+      "Type": "boolean"
+    },
+    {
+      "Name": "position",
+      "Description": "The position of the album in the charts",
+      "Type": "int"
+    },
+    {
+      "Name": "artist",
+      "Description": "artist object containing : id, name, link, picture, picture_small, picture_medium, picture_big, picture_xl, radio",
+      "Type": "object"
+    },
+    {
+      "Name": "artists",
+      "Description": "list of artist",
+      "Type": "list"
+    },
+    {
+      "Name": "id",
+      "Description": "The artist's Deezer id",
+      "Type": "int"
+    },
+    {
+      "Name": "name",
+      "Description": "The artist's name",
+      "Type": "string"
+    },
+    {
+      "Name": "link",
+      "Description": "The url of the artist on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "picture",
+      "Description": "The url of the artist picture. Add 'size' parameter to the url to change size. Can be 'small', 'medium', 'big', 'xl'",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_small",
+      "Description": "The url of the artist picture in size small.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_medium",
+      "Description": "The url of the artist picture in size medium.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_big",
+      "Description": "The url of the artist picture in size big.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_xl",
+      "Description": "The url of the artist picture in size xl.",
+      "Type": "url"
+    },
+    {
+      "Name": "radio",
+      "Description": "true if the artist has a smartradio",
+      "Type": "boolean"
+    },
+    {
+      "Name": "position",
+      "Description": "The position of the artist in the charts",
+      "Type": "int"
+    },
+    {
+      "Name": "playlists",
+      "Description": "list of playlist",
+      "Type": "list"
+    },
+    {
+      "Name": "id",
+      "Description": "The playlist's Deezer id",
+      "Type": "int"
+    },
+    {
+      "Name": "title",
+      "Description": "The playlist's title",
+      "Type": "string"
+    },
+    {
+      "Name": "public",
+      "Description": "If the playlist is public or not",
+      "Type": "boolean"
+    },
+    {
+      "Name": "link",
+      "Description": "The url of the playlist on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "picture",
+      "Description": "The url of the playlist's cover. Add 'size' parameter to the url to change size. Can be 'small', 'medium', 'big', 'xl'",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_small",
+      "Description": "The url of the playlist's cover in size small.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_medium",
+      "Description": "The url of the playlist's cover in size medium.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_big",
+      "Description": "The url of the playlist's cover in size big.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_xl",
+      "Description": "The url of the playlist's cover in size xl.",
+      "Type": "url"
+    },
+    {
+      "Name": "position",
+      "Description": "The position of the playlist in the charts",
+      "Type": "int"
+    },
+    {
+      "Name": "user",
+      "Description": "user object containing : id, name",
+      "Type": "object"
+    },
+    {
+      "Name": "podcasts",
+      "Description": "list of podcast",
+      "Type": "list"
+    },
+    {
+      "Name": "id",
+      "Description": "The podcast's Deezer id",
+      "Type": "int"
+    },
+    {
+      "Name": "title",
+      "Description": "The podcast's title",
+      "Type": "string"
+    },
+    {
+      "Name": "description",
+      "Description": "The podcast's description",
+      "Type": "string"
+    },
+    {
+      "Name": "available",
+      "Description": "If the podcast is available or not",
+      "Type": "boolean"
+    },
+    {
+      "Name": "fans",
+      "Description": "The number of podcast's fans",
+      "Type": "int"
+    },
+    {
+      "Name": "link",
+      "Description": "The url of the podcast on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "share",
+      "Description": "The share link of the podcast on Deezer",
+      "Type": "url"
+    },
+    {
+      "Name": "picture",
+      "Description": "The url of the podcast's cover.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_small",
+      "Description": "The url of the podcast's cover in size small.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_medium",
+      "Description": "The url of the podcast's cover in size medium.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_big",
+      "Description": "The url of the podcast's cover in size big.",
+      "Type": "url"
+    },
+    {
+      "Name": "picture_xl",
+      "Description": "The url of the podcast's cover in size xl.",
+      "Type": "url"
+    },
+    {
+      "Name": "position",
+      "Description": "The position of the podcasts in the charts",
+      "Type": "int"
+    }
+  ],
+  "tab_actions": "",
+  "tab_connections": [
+    {
+      "Name": "chart / tracks",
+      "Description": "Returns the Top tracks.",
+      "Returns": "A list of object of type track"
+    },
+    {
+      "Name": "chart / albums",
+      "Description": "Returns the Top albums.",
+      "Returns": "A list of object of type album"
+    },
+    {
+      "Name": "chart / artists",
+      "Description": "Returns the Top artists.",
+      "Returns": "A list of object of type artist"
+    },
+    {
+      "Name": "chart / playlists",
+      "Description": "Returns the Top playlists.",
+      "Returns": "A list of object of type playlist"
+    },
+    {
+      "Name": "chart / podcasts",
+      "Description": "Returns the Top podcasts.",
+      "Returns": "A list of object of type podcast"
+    }
+  ]
+}
