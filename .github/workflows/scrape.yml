@@ -8,27 +8,8 @@ on:
         required: true
 
 jobs:
-  authenticate:
-    runs-on: ubuntu-latest
-    outputs:
-      sid: ${{ steps.extract-session-id.outputs.sid }}
-    steps:
-      - uses: actions/checkout@v2
-      # Install NPM dependencies, cache them correctly and run Cypress
-      - name: Cypress run
-        uses: cypress-io/github-action@v2
-        env:
-          CYPRESS_DEEZER_PASSWORD: ${{ secrets.DEEZER_PASSWORD }}
-      - id: extract-session-id
-        run: |
-          sid=$(cat .sid)
-          echo "::set-output name=sid::$sid"
-
   scrape:
     runs-on: ubuntu-latest
-    needs:
-      - authenticate
-
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
@@ -37,7 +18,6 @@ jobs:
       - uses: snok/install-poetry@v1
       - name: Install Dependencies
         run: poetry install
-      - run: echo ${{ needs.authenticate.outputs.sid }}
       - name: Run Scraper
         run: poetry run scrapy runspider src/spider.py
         env:
