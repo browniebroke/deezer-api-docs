@@ -1,0 +1,23 @@
+{
+  "name": "deezer-api-docs",
+  "version": "1.0.0",
+  "description": "Extract metadata about the Deezer API docs to track changes over time.",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/browniebroke/deezer-api-docs.git"
+  },
+  "keywords": [],
+  "author": "Bruno Alla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/browniebroke/deezer-api-docs/issues"
+  },
+  "homepage": "https://github.com/browniebroke/deezer-api-docs#readme",
+  "devDependencies": {
+    "cypress": "^9.5.0"
+  }
+}
