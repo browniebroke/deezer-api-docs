@@ -46,5 +46,5 @@ class DeezerDocsSpider(scrapy.Spider):
                 content_type_data[div_id] = df.to_dict("records")
         json_str = json.dumps(content_type_data, indent=2, ensure_ascii=False)
         resource_path = OUTPUT / f"{content_type_name.lower()}.json"
-        resource_path.write_text(json_str)
+        resource_path.write_text(json_str + "\n")
         yield content_type_data
