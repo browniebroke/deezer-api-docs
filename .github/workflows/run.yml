@@ -15,4 +15,4 @@ jobs:
         uses: cypress-io/github-action@v2
         env:
           CYPRESS_DEEZER_PASSWORD: ${{ secrets.DEEZER_PASSWORD }}]
-          CYPRESS_GITHUB_PERSONAL_TOKEN: ${{ secrets.CYPRESS_GITHUB_PERSONAL_TOKEN }}]
+          CYPRESS_GITHUB_PERSONAL_TOKEN: ${{ secrets.GH_PERSONAL_TOKEN }}]
