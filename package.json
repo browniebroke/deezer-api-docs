@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/browniebroke/deezer-api-docs#readme",
   "devDependencies": {
-    "cypress": "^9.5.0"
+    "cypress": "^9.5.0",
+    "isomorphic-fetch": "^3.0.0"
   }
 }
